@@ -6,5 +6,18 @@ export default defineConfig({
   server: {
     port: 5173,
     open: true
+  },
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+    minify: 'terser',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendors': ['react', 'react-dom', 'react-router-dom'],
+          'supabase': ['@supabase/supabase-js']
+        }
+      }
+    }
   }
 })

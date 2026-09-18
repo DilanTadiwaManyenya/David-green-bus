@@ -1,16 +1,43 @@
-# React + Vite
+# David Green Bus - Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A professional website for David Green Bus tree felling, landscaping & rubble removal services in Gauteng.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Landing Page**: Hero section showcasing services
+- **Services Page**: Detailed service descriptions
+- **Contact Form**: Quote request system with Supabase integration
+- **Admin Dashboard**: Manage quotes and customer inquiries
+- **Responsive Design**: Mobile-friendly interface
+- **Real-time Database**: Supabase backend for quote management
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React 18 + Vite
+- **Styling**: Tailwind CSS
+- **Backend**: Supabase
+- **Routing**: React Router v6
+- **State Management**: React Context + Hooks
 
-## Expanding the Oxlint configuration
+## 📋 Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- Node.js 16+ 
+- npm or yarn
+- Supabase account
+
+## 🔧 Setup Instructions
+
+### 1. Clone the repository
+```bash
+git clone <your-repo-url>
+cd david-green-bus
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Setup environment variables
+
+Create a `.env` file in the root directory:
