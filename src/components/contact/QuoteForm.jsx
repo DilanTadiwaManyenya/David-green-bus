@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { quoteService } from '../../services/supabase'
 
 export default function QuoteForm() {
   const [formData, setFormData] = useState({
@@ -43,12 +44,16 @@ export default function QuoteForm() {
         throw new Error('Please fill in all required fields')
       }
 
-      // For now, just log to console
-      // Later we'll integrate with Supabase
-      console.log('Quote request:', formData)
-
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000))
+      // Submit to Supabase
+      await quoteService.createQuote({
+        name: formData.name,
+        phone: formData.phone,
+        email: formData.email,
+        service: formData.service,
+        location: formData.location,
+        message: formData.message,
+        status: 'pending'
+      })
 
       // Show success message
       setSuccess(true)
